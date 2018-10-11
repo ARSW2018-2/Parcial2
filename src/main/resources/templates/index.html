@@ -24,7 +24,23 @@
       <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
       <ul>
         <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/java-getting-started">Heroku Button</a> on the repository.</li>
-
+    
+        
+    <h2>Identificacion</h2>
+    <form name="form" action="OrdersControllers.js" method="get">
+        <input type="text" name="prod" id="prod">
+        <h2>modo</h2>
+        <select name="combo">
+              <!-- Opciones de la lista -->
+              <option value="1">intra-dia</option>
+              <option value="2" selected>diaria</option> <!-- Opción por defecto -->
+              <option value="3">semanal/mensual</option>
+            </select>
+    <button onclick="sub()">Prueba</button>    
+    
+   </form>
+        
+        
         <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/java-getting-started/blob/master/pom.xml">pom.xml</a>, creating a slug.</li>
         <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
         <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
@@ -55,6 +71,8 @@
     Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
   </div>
 </div>
+<script src="OrdersController.js"> </script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>                
 
 </body>
 </html>
